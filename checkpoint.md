@@ -8,15 +8,12 @@
 ## Updated Schedule
 
 ## Works completed so far
-- Designed and implemented a new mesh simplification algorithm to make it easy to parallelize.
-- Discussed with professor Todd Mowry about how to parallelize this mesh simplification algorithm.
-- Find potential parallel parts in the serial version algorithm, and parallized those parts with OpenMP and PThread.
-- Designed the new parallel version algorithm. Trying to parallize our new mesh simplification algorithm in a multiple task queue model.
 
 ## preliminary results
 
 ## Current Issues
 
 ## First try to parallelism
+Our first try to parallelize the problem is to identify the independent loops within the serial algorithm. These loops can be distributed to many workers in a shared address space fashion. Common implementations include OpenMp and Pthread library.
 
 ## Way to final parallelism
